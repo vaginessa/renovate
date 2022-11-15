@@ -41,7 +41,6 @@ describe('workers/repository/config-migration/branch/rebase', () => {
     let migratedConfigData: MigratedData;
 
     beforeEach(() => {
-      jest.resetAllMocks();
       GlobalConfig.reset();
       migratedConfigData = {
         content: renovateConfig,

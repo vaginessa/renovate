@@ -87,7 +87,6 @@ describe('modules/datasource/github-releases/cache/cache-base', () => {
 
   beforeEach(() => {
     responses = [];
-    jest.resetAllMocks();
     jest.spyOn(DateTime, 'now').mockReturnValue(now);
     httpPostJson.mockImplementation(() => {
       const resp = responses.shift()!;

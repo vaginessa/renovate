@@ -20,7 +20,6 @@ describe('workers/repository/onboarding/branch/rebase', () => {
     let config: RenovateConfig;
 
     beforeEach(() => {
-      jest.resetAllMocks();
       config = {
         ...getConfig(),
         repository: 'some/repo',

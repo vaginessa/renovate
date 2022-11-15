@@ -123,7 +123,6 @@ describe('util/github/graphql/datasource-helper', () => {
     const t3 = '01-01-2023';
 
     beforeEach(() => {
-      jest.resetAllMocks();
       http = new GithubHttp();
     });
 

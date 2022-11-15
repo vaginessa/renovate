@@ -5,7 +5,6 @@ import * as schema from './schema';
 
 describe('util/schema', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
     memCache.init();
   });
 

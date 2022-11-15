@@ -43,13 +43,11 @@ const datasource = new GoDatasource();
 describe('modules/datasource/go/index', () => {
   describe('getReleases', () => {
     beforeEach(() => {
-      jest.resetAllMocks();
       hostRules.find.mockReturnValue({});
       hostRules.hosts.mockReturnValue([]);
     });
 
     afterEach(() => {
-      jest.resetAllMocks();
       delete process.env.GOPROXY;
     });
 
@@ -85,13 +83,8 @@ describe('modules/datasource/go/index', () => {
 
   describe('getDigest', () => {
     beforeEach(() => {
-      jest.resetAllMocks();
       hostRules.find.mockReturnValue({});
       hostRules.hosts.mockReturnValue([]);
-    });
-
-    afterEach(() => {
-      jest.resetAllMocks();
     });
 
     it('returns null for no go-source tag', async () => {

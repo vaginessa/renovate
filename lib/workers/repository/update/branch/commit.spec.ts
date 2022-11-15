@@ -22,7 +22,6 @@ describe('workers/repository/update/branch/commit', () => {
         updatedArtifacts: [],
         upgrades: [],
       } as BranchConfig;
-      jest.resetAllMocks();
       git.commitFiles.mockResolvedValueOnce('123test');
       GlobalConfig.reset();
     });

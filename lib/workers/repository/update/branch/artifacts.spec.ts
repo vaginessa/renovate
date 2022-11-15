@@ -9,7 +9,6 @@ describe('workers/repository/update/branch/artifacts', () => {
 
   beforeEach(() => {
     GlobalConfig.set({});
-    jest.resetAllMocks();
     // TODO #7154 incompatible types
     config = {
       ...getConfig(),

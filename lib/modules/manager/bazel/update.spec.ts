@@ -5,10 +5,6 @@ import { updateDependency } from '.';
 
 describe('modules/manager/bazel/update', () => {
   describe('updateDependency', () => {
-    beforeEach(() => {
-      jest.resetAllMocks();
-    });
-
     it('updates git_repository tag', async () => {
       const input = `
         git_repository(

@@ -24,7 +24,6 @@ const gitlab = mocked(_gitlab);
 
 describe('config/presets/local/index', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
     const preset = { resolved: 'preset' };
     azure.getPresetFromEndpoint.mockResolvedValueOnce(preset);
     bitbucket.getPresetFromEndpoint.mockResolvedValueOnce(preset);

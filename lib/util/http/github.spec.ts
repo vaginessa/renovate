@@ -54,7 +54,6 @@ describe('util/http/github', () => {
   beforeEach(() => {
     githubApi = new GithubHttp();
     setBaseUrl(githubApiHost);
-    jest.resetAllMocks();
     repoCache = {};
     repositoryCache.getCache.mockReturnValue(repoCache);
   });

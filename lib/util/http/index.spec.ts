@@ -313,7 +313,6 @@ describe('util/http/index', () => {
     type TestType = z.infer<typeof testSchema>;
 
     beforeEach(() => {
-      jest.resetAllMocks();
       memCache.init();
     });
 

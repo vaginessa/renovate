@@ -63,10 +63,6 @@ describe('workers/repository/update/pr/changelog/release-notes', () => {
     hostRules.hosts.mockReturnValue([]);
   });
 
-  afterEach(() => {
-    jest.resetAllMocks();
-  });
-
   describe('releaseNotesCacheMinutes', () => {
     const now = DateTime.local();
 

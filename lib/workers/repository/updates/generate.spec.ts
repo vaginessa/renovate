@@ -7,7 +7,6 @@ import { generateBranchConfig } from './generate';
 let defaultConfig: RenovateConfig;
 
 beforeEach(() => {
-  jest.resetAllMocks();
   defaultConfig = getConfig();
 });
 

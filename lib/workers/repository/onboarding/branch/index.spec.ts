@@ -36,7 +36,6 @@ describe('workers/repository/onboarding/branch/index', () => {
     let config: RenovateConfig;
 
     beforeEach(() => {
-      jest.resetAllMocks();
       config = getConfig();
       config.repository = 'some/repo';
       git.getFileList.mockResolvedValue([]);

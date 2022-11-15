@@ -24,7 +24,6 @@ const responseBody = [
 
 describe('modules/datasource/github-releases/index', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
     hostRules.hosts.mockReturnValue([]);
     hostRules.find.mockReturnValue({
       token: 'some-token',

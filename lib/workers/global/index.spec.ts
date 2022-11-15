@@ -27,7 +27,6 @@ const limits = _limits;
 
 describe('workers/global/index', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
     logger.getProblems.mockImplementationOnce(() => []);
     configParser.parseConfigs = jest.fn();
     platform.initPlatform.mockImplementation((input) => Promise.resolve(input));

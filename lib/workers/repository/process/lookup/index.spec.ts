@@ -48,7 +48,6 @@ describe('workers/repository/process/lookup/index', () => {
     config.manager = 'npm';
     config.versioning = npmVersioningId;
     config.rangeStrategy = 'replace';
-    jest.resetAllMocks();
     jest
       .spyOn(GitRefsDatasource.prototype, 'getReleases')
       .mockResolvedValueOnce({

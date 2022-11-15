@@ -43,8 +43,6 @@ jest.spyOn(os, 'platform').mockReturnValue('linux');
 
 describe('modules/manager/gradle-wrapper/artifacts', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
-
     env.getChildProcessEnv.mockReturnValue({
       ...envMock.basic,
       LANG: 'en_US.UTF-8',

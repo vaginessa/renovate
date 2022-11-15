@@ -26,7 +26,6 @@ describe('modules/platform/gitlab/index', () => {
   beforeEach(async () => {
     // reset module
     jest.resetModules();
-    jest.resetAllMocks();
     gitlab = await import('.');
     jest.mock('../../../logger');
     logger = (await import('../../../logger')).logger as never;
@@ -1899,8 +1898,6 @@ describe('modules/platform/gitlab/index', () => {
   });
 
   describe('updatePr(prNo, title, body)', () => {
-    jest.resetAllMocks();
-
     it('updates the PR', async () => {
       await initPlatform('13.3.6-ee');
       httpMock
@@ -1996,8 +1993,6 @@ describe('modules/platform/gitlab/index', () => {
   });
 
   describe('mergePr(pr)', () => {
-    jest.resetAllMocks();
-
     it('merges the PR', async () => {
       httpMock
         .scope(gitlabApiHost)
